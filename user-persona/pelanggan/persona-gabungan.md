@@ -10,7 +10,7 @@
 
 ## Apa tujuan Anda?
 
-1.  Mereka ingin mendapatkan makanan dengan tempat untuk memakannya di waktu
+1.  Ronggo ingin mendapatkan makanan dengan tempat untuk memakannya di waktu
     istirahat.
 
 2.  Ketika jam makan siang, Pak Budi menginginkan makanan yang bersih. Selain
@@ -24,7 +24,7 @@
 
 ## Apa yang menghambat Anda?
 
-1.  Mereka sering kali tidak mendapatkan tempat duduk untuk makan di kantin
+1.  Ronggo sering kali tidak mendapatkan tempat duduk untuk makan di kantin
     karena banyak orang yang sudah selesai makan namun tidak kunjung pergi.
 
 2.  Sistem kantin yang sangat tidak teratur. Sering sekali menunggu terlalu lama
