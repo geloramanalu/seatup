@@ -38,3 +38,13 @@
     dan kantin ramai. Karena ramai, mendapatkan tempat untuk makan juga sulit.
     Stok makanan di kantin juga habis di waktu yang tidak tentu (hingga akhirnya
     kantin terkesan tidak bisa diandalkan).
+
+# Rumusan Solusi
+
+1.  Dengan mendesain suatu sistem reservasi dan penjadwalan kursi atau
+    pengelolaan kursi dengan baik.
+2.  Dengan memastikan bahwa sistem antrian benar-benar dilaksanakan sesuai
+    urutan antri.
+3.  Dengan menampilkan live counter dan analitik sederhana tentang stok makanan
+    sehingga pelanggan bisa melihat dan/atau memprediksi apakah akan ada menu
+    makanan yang tersedia di waktu tertentu.
