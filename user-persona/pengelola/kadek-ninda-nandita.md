@@ -1,3 +1,6 @@
+Kadek Ninda Nandita Putri
+21/475288/PA/20562
+
 Nama : Intan
 Pekerjaan : Pemiliki Usaha Kantin Komapi
 Demograohic : 32 tahun, asli Yogyakarta, sudah menikah sejak umur 26 tahun. Memiliki income dengan level menengah ke atas
