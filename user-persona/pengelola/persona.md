@@ -1,3 +1,6 @@
+Nama: Muhammad Irfan
+NIM: 21/474436/PA/20484
+
 # Persona Pengelola kantin
 Anton, 30 tahun, seorang ayah satu anak yang memulai bisnis kantin untuk menghidupi keluarganya.
 Awalnya, karena pandemi covid dua tahun belakangan, dia mempunyai usaha bisnis online catering.
@@ -28,4 +31,4 @@ Memiliki branding yang bagus, baik di tempat kantin itu sendiri maupun branding 
 Memiliki aplikasi untuk pengelolaan kantin, aplikasi itu dirancang sedemikian rupa sehingga customer bisa nyaman dalam membeli makanan di kantin.
 
 # Fitur yang ada dalam aplikasi kantin 
-Fitur menu, fitur pemesanan makanan, fitur memilih kursi, navigasi, dan pembayaran.
+Fitur menu, fitur pemesanan makanan, fitur memilih kursi, navigasi, dan pembayaran. Fitur lainnya akan dikembangkan segera.
