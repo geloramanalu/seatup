@@ -17,6 +17,10 @@ code {
     monospace;
 }
 
+.bg-seatup-red {
+  background-color: #A7332F;
+}
+
 .navbar-seatup {
   background-color: #A7332F;
 }
