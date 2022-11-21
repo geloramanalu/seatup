@@ -40,7 +40,7 @@ export default function Navbar() {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <NavLink 
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "" ? "rounded-full py-3 px-6 text-black bg-yellow-400" : " "}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
                   to={"/"}
                 >
                   <i className="opacity-75 "></i><span className=" text-xl ">Beranda</span>
@@ -48,7 +48,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "menu" ? "rounded-full py-3 px-6 text-black bg-yellow-400" : " "}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "menu" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
                   to={"/menu"}
                 >
                   <i className="text-white opacity-75"></i><span className="text-xl ">Menu</span>
@@ -56,7 +56,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "cart" ? "rounded-full py-3 px-6 text-black bg-yellow-400" : " "}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "cart" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
                   to={"/cart"}
                 >
                   <i className="text-white opacity-75"></i><span className="text-xl ">Keranjang</span>
@@ -64,18 +64,10 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "login" ? "rounded-full py-3 px-6 text-black bg-yellow-400" : " "}`}
-                  to={"/login"}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "profil" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
+                  to={"/profil"}
                 >
-                  <i className="text-white opacity-75"></i><span className="text-xl ">Masuk</span>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "register" ? "rounded-full py-3 px-6 text-black bg-yellow-400" : " "}`}
-                  to={"/register"}
-                >
-                  <i className="text-white opacity-75"></i><span className="text-xl">Daftar</span>
+                  <i className="text-white opacity-75"></i><span className="text-xl ">Masuk/Daftar</span>
                 </NavLink>
               </li>
             </ul>
