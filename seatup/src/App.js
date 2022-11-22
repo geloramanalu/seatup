@@ -20,7 +20,6 @@ function App() {
         <Route path='/profil' element={<Profil />} />
         <Route path='/Seat' element={<Seat />} />
         <Route path='/Cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
         <Route path="*" element={< Error />} />
 
       </Routes>
