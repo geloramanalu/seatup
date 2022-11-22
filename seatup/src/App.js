@@ -7,6 +7,9 @@ import Seat from './component/Seat';
 import Homepage from './component/Homepage';
 import Cart from './component/Cart';
 import Checkout from './component/Checkout';
+import Login from './component/Login';
+import Error from './component/Error';
+
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path='/profil' element={<Profil />} />
         <Route path='/Seat' element={<Seat />} />
         <Route path='/Cart' element={<Cart />} />
+        <Route path='/login' element={<Login />} />
+        <Route path="*" element={< Error />} />
+
       </Routes>
 
     </div>
