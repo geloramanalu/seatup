@@ -7,8 +7,8 @@ import Seat from './component/Seat';
 import Homepage from './component/Homepage';
 import Cart from './component/Cart';
 import Checkout from './component/Checkout';
-import Login from './component/Login';
 import Error from './component/Error';
+import LoadingPayment from './component/LoadingPayment';
 
 
 function App() {
@@ -19,13 +19,11 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/profil' element={<Profil />} />
-        <Route path='/Seat' element={<Seat />} />
-        <Route path='/Cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
-        <Route path="*" element={< Error />} />
-
+        <Route path='/seat' element={<Seat />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/loading-payment' element={<LoadingPayment />} />
+        <Route path="*" element={<Error />} />
       </Routes>
-
     </div>
   );
 }
