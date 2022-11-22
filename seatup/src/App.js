@@ -7,7 +7,6 @@ import Seat from './component/Seat';
 import Homepage from './component/Homepage';
 import Cart from './component/Cart';
 import Checkout from './component/Checkout';
-import Login from './component/Login';
 import Error from './component/Error';
 
 
