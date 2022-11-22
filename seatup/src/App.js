@@ -18,10 +18,8 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/profil' element={<Profil />} />
-        <Route path='/seat' element={<Seat />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/payment-loading' element={<LoadingPayment />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/Seat' element={<Seat />} />
+        <Route path='/Cart' element={<Cart />} />
         <Route path="*" element={< Error />} />
 
       </Routes>
