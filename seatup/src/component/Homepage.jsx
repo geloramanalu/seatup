@@ -5,7 +5,7 @@ const HomepageButton = ({ image, label }) => {
   return (
     <div className="mt-5 rounded-3xl border-4 border-[#A7332F]">
       <img src={image} className="w-full"></img>
-      <div className="py-2 m-3 rounded-3xl bg-seatup-red text-white text-2xl">
+      <div className="py-2 m-3 rounded-3xl bg-merah text-white text-2xl">
         {label}
       </div>
     </div>
