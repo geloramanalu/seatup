@@ -9,6 +9,8 @@ module.exports = {
       'abu': '#DADADA',
       'white': '#FFFFFF',
       'black': '#000000',
+      'brokenwhite': '#F6F6F6',
+      'broken2white': '#DADADA'
     }
   },
   plugins: [],
