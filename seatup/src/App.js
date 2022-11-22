@@ -8,6 +8,9 @@ import Homepage from './component/Homepage';
 import Cart from './component/Cart';
 import Checkout from './component/Checkout';
 import LoadingPayment from './component/LoadingPayment';
+import Login from './component/Login';
+import Error from './component/Error';
+
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/payment-loading' element={<LoadingPayment />} />
+        <Route path='/login' element={<Login />} />
+        <Route path="*" element={< Error />} />
+
       </Routes>
 
     </div>
