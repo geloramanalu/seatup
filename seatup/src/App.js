@@ -7,6 +7,7 @@ import Seat from './component/Seat';
 import Homepage from './component/Homepage';
 import Cart from './component/Cart';
 import Checkout from './component/Checkout';
+import LoadingPayment from './component/LoadingPayment';
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/profil' element={<Profil />} />
-        <Route path='/Seat' element={<Seat />} />
-        <Route path='/Cart' element={<Cart />} />
+        <Route path='/seat' element={<Seat />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/payment-loading' element={<LoadingPayment />} />
       </Routes>
 
     </div>
