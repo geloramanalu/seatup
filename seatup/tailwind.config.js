@@ -9,6 +9,12 @@ module.exports = {
         'abu': '#DADADA',
         'white': '#FFFFFF',
         'black': '#000000',
+        'brokenwhite': '#F6F6F6',
+        'broken2white': '#DADADA',
+        'darkerabu':'#AAAAAA',
+        'kuningtua': '#D99B40',
+        'biru': '#223954',
+        'darkbiru':'#111E2E'
       }
     },
   },
