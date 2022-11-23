@@ -14,6 +14,15 @@ module.exports = {
       'broken2white': '#DADADA',
       'abu2':'#9F9F9F'
     }
+    extend: {
+      colors: {
+        'kuning': '#FFAC30',
+        'merah': '#A7332F',
+        'abu': '#DADADA',
+        'white': '#FFFFFF',
+        'black': '#000000',
+      }
+    },
   },
   plugins: [],
 }
