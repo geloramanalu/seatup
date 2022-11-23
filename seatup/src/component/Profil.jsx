@@ -1,7 +1,7 @@
 const Profil = ({text, backdrop}) => {
     return (
         <div className="profil-container flex flex-col lg:flex-row justify-center lg:justify-evenly pt-4 lg:pt-24 lg:pl-16 flex-wrap lg:flex-nowrap">
-            <div className="menu-profil-container flex flex-col items-center lg:items-start lg:items-start ">
+            <div className="menu-profil-container flex flex-col items-center lg:items-start ">
                 <h1 className="text-black text-2xl font-extrabold">Hello, Ronggo!</h1>
                 <p className="text-gray-500 w-8/12 text-center lg:text-left">Bergabung Sejak, 21 Oktober 2022</p>
                 <div className="menu-profil flex flex-col pt-4 text-black">
