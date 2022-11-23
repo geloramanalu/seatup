@@ -4,6 +4,10 @@ const Profil = ({text, backdrop}) => {
             <div className="menu-profil-container flex flex-col items-center lg:items-start">
                 <h1 className="text-black 2xl:text-4xl text-2xl text font-extrabold">Hello, Ronggo!</h1>
                 <p className="text-gray-500 w-8/12 text-center text-md lg:text-left">Bergabung Sejak, 21 Oktober 2022</p>
+        <div className="profil-container flex flex-col lg:flex-row justify-center lg:justify-evenly pt-4 lg:pt-24 lg:pl-16 flex-wrap lg:flex-nowrap">
+            <div className="menu-profil-container flex flex-col items-center lg:items-start ">
+                <h1 className="text-black text-2xl font-extrabold">Hello, Ronggo!</h1>
+                <p className="text-gray-500 w-8/12 text-center lg:text-left">Bergabung Sejak, 21 Oktober 2022</p>
                 <div className="menu-profil flex flex-col pt-4 text-black">
                     <ul className="bg-kuning hidden lg:flex lg:flex-col text-lg bg-opacity-25 p-4 divide-y text-center lg:text-left divide-kuning border-opacity-50 rounded-md lg:w-52 xl:w-72 w-screen">
                         <li className="pt-1"><a href="/">Profil</a></li>
