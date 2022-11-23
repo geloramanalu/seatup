@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 500 mb-3 navbar-seatup">
+      <nav className="sticky top-0 flex flex-wrap items-center justify-between px-2 py-3 500 mb-3 navbar-seatup shadow-xl">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between min-w-full">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink
@@ -32,10 +32,10 @@ export default function Navbar() {
           </div>
           <div
             className={
-              "lg:flex flex-grow items-center text-xl text-center " +
-              (navbarOpen ? " flex pt-4" : " hidden")
-            }
-            id="example-navbar-danger"
+                "lg:flex flex-grow items-center text-xl text-center " +
+                (navbarOpen ? " flex pt-4" : " hidden")
+              }
+              id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
