@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faGreaterThan} from "@fortawesome/free-solid-svg-icons";
-import { seatupData } from "./data";
+
+
 
 const Checkout = () => {
     const[counter, setCounter] = useState(0);
@@ -18,10 +19,9 @@ const Checkout = () => {
         }
     }
 
-    
 
     return (
-        <div className="checkout-container flex flex-col justify-center mx-6 my-24 xl:mx-12 xl:my-20">
+        <div className="checkout-container flex flex-col justify-center mx-6 my-12 xl:mx-12 xl:my-20">
             <div className="order flex flex-col lg:w-8/12 w-full mb-3 ">
                 <h1 className="text-3xl xl:text-5xl font-extrabold  border-b-4 xl:mb-5 xl:pl-10 px-2 pb-2 border-opacity-20 border-black">Checkout</h1>
                 <div className="customer text-md xl:text-2xl font-semibold opacity-75 xl:mb-16 xl:pl-10 lg:text-start text-center">
@@ -47,9 +47,9 @@ const Checkout = () => {
                     <div className="flex flex-col flex-1 items-center xl:my-3 justify-center">
                         <div className="shape box-content h-44 w-44 xl:h-64 xl:w-64 lg:px-8 lg:py-8 mb-8 bg-abu text-center"></div>
                         <div className=" flex flex-row text-black w-full lg:w-4/6 justify-evenly">
-                            <button className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center p-5 shadow-xl bg-kuning hover:bg-opacity-75" onClick={() => decrement()}>-</button>
+                            <button className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center p-5 shadow-xl bg-kuning " onClick={() => decrement()}>-</button>
                             <h1 className="text-xl xl:text-2xl self-center text-abu px-3">{counter}</h1>
-                            <button className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center p-5 shadow-xl bg-kuning hover:bg-opacity-75" onClick={() => increment()}>+</button>
+                            <button className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center p-5 shadow-xl bg-kuning " onClick={() => increment()}>+</button>
                         </div>
                     </div>
                 </div>
@@ -82,8 +82,8 @@ const Checkout = () => {
                         </div>
                     </div>
                     <div className="bottom-0 sticky lg:relative bg-merah rounded-2xl xl:mx-7 px-4 mx-3 mt-4 flex-col flex text-abu font-bold divide-y divide-kuning">
-                        <button className="text-md xl:text-xl text-start p-2 mx-1 xl:p-4 xl:mx-2 flex items-center justify-between  hover:text-gray-400">Tunai <FontAwesomeIcon icon={faGreaterThan} /></button>
-                        <button className="text-md xl:text-xl text-start p-2 mx-1 xl:p-4 xl:mx-2 flex items-center justify-between hover:text-gray-400 mb-2">Terapkan Promo <FontAwesomeIcon icon={faGreaterThan} /></button>
+                        <button className="text-md xl:text-xl text-start p-2 mx-1 xl:p-4 xl:mx-2 flex items-center justify-between  hover:text-gray-500">Tunai <FontAwesomeIcon icon={faGreaterThan} /></button>
+                        <button className="text-md xl:text-xl text-start p-2 mx-1 xl:p-4 xl:mx-2 flex items-center justify-between hover:text-gray-500 mb-2">Terapkan Promo <FontAwesomeIcon icon={faGreaterThan} /></button>
                     </div>
                 </div>
             </div>

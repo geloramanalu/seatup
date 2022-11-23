@@ -31,7 +31,7 @@ export default function Navbar({login}) {
 
   return (
     <>
-      <nav className="sticky z-10 top-0 flex flex-wrap items-center justify-between px-2 py-3 500 navbar-seatup shadow-xl">
+      <nav className="sticky top-0 flex flex-wrap items-center justify-between px-2 py-3 500 mb-3 navbar-seatup shadow-xl">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between min-w-full">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink
