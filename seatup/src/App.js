@@ -53,6 +53,7 @@ function App() {
         <Route path='/profil' element={<Profil />} />
         <Route path='/seat' element={<Seat />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path='/cart' element={<Cart />} />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -98,6 +99,14 @@ function App() {
         <Route path='/loading-payment' element={<LoadingPayment />}/>
         <Route path='/register' element={<Register />} />
 >>>>>>> 65b2300 (hotfix: Duplicate import)
+=======
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/loading-payment' element={<LoadingPayment />} />
+        <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
+        <Route path='/loading-payment' element={<LoadingPayment />}/>
+        <Route path='/register' element={<Register />} />
+>>>>>>> 3136b57 (hotfix: Duplicate import)
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<Login />} />
       </Routes>
