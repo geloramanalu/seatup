@@ -33,6 +33,7 @@ function App() {
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route path='/loading-payment' element={<LoadingPayment />} />
 <<<<<<< HEAD
         <Route path='/notification' element={<NotificationPage/>} />
@@ -44,6 +45,11 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
 >>>>>>> 036fc17 (added register page and paths)
+=======
+        <Route path='/loading-payment' element={<LoadingPayment />}/>
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+>>>>>>> 231c302 (added register page and paths)
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<Login />} />
       </Routes>
