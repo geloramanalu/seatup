@@ -9,14 +9,21 @@ import Cart from './component/Cart';
 import Checkout from './component/Checkout';
 import Error from './component/Error';
 import LoadingPayment from './component/LoadingPayment';
+<<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
 import Login from './component/Login';
+=======
+import Login from './component/Login';
+import { useState } from 'react';
+>>>>>>> 3109a91 ([edit]: login)
 
 
 function App() {
+  const [login, setLogin] = useState(false);
+
   return (
     <div>
-      <Navbar />
+      <Navbar login={login}/>
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/checkout' element={<Checkout />} />
@@ -24,7 +31,11 @@ function App() {
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/loading-payment' element={<LoadingPayment />} />
+<<<<<<< HEAD
         <Route path='/notification' element={<NotificationPage/>} />
+=======
+        <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
+>>>>>>> 3109a91 ([edit]: login)
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<Login />} />
       </Routes>
