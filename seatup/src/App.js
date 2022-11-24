@@ -9,12 +9,16 @@ import Cart from './component/Cart';
 import Checkout from './component/Checkout';
 import Error from './component/Error';
 import LoadingPayment from './component/LoadingPayment';
+import Login from './component/Login';
+import { useState } from 'react';
 
 
 function App() {
+  const [login, setLogin] = useState(false);
+
   return (
     <div>
-      <Navbar />
+      <Navbar login={login}/>
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/checkout' element={<Checkout />} />
@@ -23,6 +27,7 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/loading-payment' element={<LoadingPayment />} />
+        <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
