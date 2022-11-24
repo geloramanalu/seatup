@@ -8,7 +8,7 @@ import { useState } from 'react'
 import { useNavigate } from "react-router"
 
 
-const Login = ({ setLogin }) => {
+const Login = ({setLogin}) => {
   const [open, setOpen] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -38,10 +38,10 @@ const Login = ({ setLogin }) => {
 
 
   const handleLogin = () => {
-    if (username === users.user1.username1 && password === users.user1.password1) {
+    if(username === users.user1.username1 && password === users.user1.password1){
       setLogin(true);
       navigate('/profil')
-    } else {
+    }else{
       navigate('/error')
     }
   }
@@ -53,31 +53,31 @@ const Login = ({ setLogin }) => {
         <div className="flex-col  gap-y-8 box-content rounded-xl px-20 py-10 flex justify-center items-center bg-brokenwhite drop-shadow-lg">
           <h1 className="text-black font-extrabold text-3xl ">Selamat Datang Kembali! </h1>
           <h1>Masuk untuk melanjutkan pesanan.</h1>
-          <div className="pb-0">
+          <div>
             <form action="#" className="w-full" onSubmit={handleSubmit}>
               <label className="relative block mb-5">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <img src={email}></img>
                 </span>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="rounded-full  bg-abu text-gray-900 h-12 w-full pl-10 pr-36 p-2.5 focus:outline-none "
-                  placeholder="Email"
+                <input 
+                  type="email" 
+                  name="email" 
+                  id="email" 
+                  className="rounded-full  bg-abu text-gray-900 h-12 w-full pl-10 pr-36 p-2.5 focus:outline-none " 
+                  placeholder="Email" 
                   required=""
                   onChange={e => setUsername(e.target.value)}
                   value={username}></input>
               </label>
-              <label className="relative block">
+              <label className="relative block mb-5">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-4">
                   <img src={passwordImg}></img>
                 </span>
-                <input
-                  type={(open === false) ? 'password' : 'text'}
-                  name="password" id="password"
-                  className="rounded-full px-4 py-2 bg-abu text-gray-900 h-12 w-full pl-10 pr-36 p-2.5 focus:outline-none "
-                  placeholder="Kata Sandi"
+                <input 
+                  type={(open === false) ? 'password' : 'text'} 
+                  name="password" id="password" 
+                  className="rounded-full px-4 py-2 bg-abu text-gray-900 h-12 w-full pl-10 pr-36 p-2.5 focus:outline-none " 
+                  placeholder="Kata Sandi" 
                   required=""
                   onChange={e => setPassword(e.target.value)}
                   value={password}></input>
@@ -90,6 +90,12 @@ const Login = ({ setLogin }) => {
                   </div>
                 </div>
               </label>
+            <button 
+              type="submit" 
+              className="text-black hover:bg-kuningtua bg-kuning rounded-full px-6 py-3 font-extrabold w-full items-center drop-shadow-lg  text-center "
+              onClick={e => handleLogin(e)} >
+                Masuk
+            </button>
             </form>
           </div>
           <div className="flex justify-between w-full" >
@@ -99,12 +105,6 @@ const Login = ({ setLogin }) => {
             </div>
             <a className="font-bold text-merah" href="#"> Lupa Kata Sandi?</a>
           </div>
-          <button
-            type="submit"
-            className="text-black hover:bg-kuningtua bg-kuning rounded-full px-6 py-3 font-extrabold w-62 items-center drop-shadow-lg  text-center "
-            onClick={e => handleLogin(e)} >
-            Masuk
-          </button>
           <div className="relative flex  items-center w-full">
             <div className="flex-grow border-t border-darkerabu"></div>
             <span className="flex-shrink mx-4 ">atau masuk dengan</span>

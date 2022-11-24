@@ -16,6 +16,7 @@ import LoadingPayment from './component/LoadingPayment';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
 import Login from './component/Login';
 =======
@@ -31,6 +32,10 @@ import Login from './component/Login';
 >>>>>>> bca67e3 ([edit]: App)
 import { useState } from 'react';
 >>>>>>> 3109a91 ([edit]: login)
+=======
+import Login from './component/Login';
+import { useState } from 'react';
+>>>>>>> 3eaa541 ([edit]: login)
 
 
 function App() {
