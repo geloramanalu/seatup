@@ -4,16 +4,34 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { NavLink, useLocation } from "react-router-dom";
 
 
-export default function Navbar() {
+export default function Navbar({login}) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
   const location  = useLocation();
   const {pathname} = location;
   const splitLocation = pathname.split("/");
 
+  const handleProfil = () => {
+    if (window.performance) {
+      if (performance.navigation.type === 1 && login) {
+        return (
+          <>
+            <i className=" opacity-75"></i><span className="text-xl ">Profil</span>
+          </>
+        );
+      } else {
+        return (
+          <>
+            <i className=" opacity-75"></i><span className="text-xl ">Masuk/Daftar</span>
+          </>
+        );
+      }
+    }
+  }
+
   return (
     <>
-      <nav className="sticky top-0 flex flex-wrap items-center justify-between px-2 py-3 500 mb-3 navbar-seatup shadow-xl">
+      <nav className="sticky z-10 top-0 flex flex-wrap items-center justify-between px-2 py-3 500 navbar-seatup shadow-xl">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between min-w-full">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <NavLink
@@ -40,34 +58,34 @@ export default function Navbar() {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <NavLink 
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
                   to={"/"}
                 >
-                  <i className="opacity-75 "></i><span className=" text-xl ">Beranda</span>
+                  <i className="opacity-75 "></i><span className="text-xl ">Beranda</span>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "menu" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "menu" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
                   to={"/menu"}
                 >
-                  <i className="text-white opacity-75"></i><span className="text-xl ">Menu</span>
+                  <i className=" opacity-75"></i><span className="text-xl ">Menu</span>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "cart" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "cart" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
                   to={"/cart"}
                 >
-                  <i className="text-white opacity-75"></i><span className="text-xl ">Keranjang</span>
+                  <i className=" opacity-75"></i><span className="text-xl ">Keranjang</span>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold text-white hover:opacity-75 ${splitLocation[1] === "profil" ? "rounded-full py-3 px-6 text-black bg-kuning" : " "}`}
-                  to={"/profil"}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "login" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
+                  to={"/login"}
                 >
-                  <i className="text-white opacity-75"></i><span className="text-xl ">Masuk/Daftar</span>
+                  {e => handleProfil(e)}
                 </NavLink>
               </li>
             </ul>

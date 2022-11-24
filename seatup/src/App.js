@@ -11,12 +11,16 @@ import Checkout from './component/Checkout';
 import Error from './component/Error';
 import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
+import Login from './component/Login';
+import { useState } from 'react';
 
 
 function App() {
+  const [login, setLogin] = useState(false);
+
   return (
     <div>
-      <Navbar />
+      <Navbar login={login}/>
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/checkout' element={<Checkout />} />
