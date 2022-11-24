@@ -50,6 +50,7 @@ function App() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 65b2300 (hotfix: Duplicate import)
@@ -61,6 +62,10 @@ function App() {
 =======
 =======
 >>>>>>> bca67e3 ([edit]: App)
+=======
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/loading-payment' element={<LoadingPayment />} />
+>>>>>>> a28bc49 (hotfix: Duplicate import)
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
 <<<<<<< HEAD
 <<<<<<< HEAD
