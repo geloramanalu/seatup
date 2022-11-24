@@ -13,12 +13,15 @@ import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
 import Login from './component/Login';
 =======
 import Login from './component/Login';
 =======
 >>>>>>> 33223b1 ([edit]: App)
+=======
+>>>>>>> 65b2300 (hotfix: Duplicate import)
 import { useState } from 'react';
 >>>>>>> 3109a91 ([edit]: login)
 
@@ -38,7 +41,10 @@ function App() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 65b2300 (hotfix: Duplicate import)
         <Route path='/checkout' element={<Checkout />} />
 >>>>>>> 33223b1 ([edit]: App)
         <Route path='/loading-payment' element={<LoadingPayment />} />
@@ -46,6 +52,7 @@ function App() {
         <Route path='/notification' element={<NotificationPage/>} />
 =======
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 3109a91 ([edit]: login)
 =======
@@ -60,6 +67,10 @@ function App() {
 >>>>>>> 231c302 (added register page and paths)
 =======
 >>>>>>> 33223b1 ([edit]: App)
+=======
+        <Route path='/loading-payment' element={<LoadingPayment />}/>
+        <Route path='/register' element={<Register />} />
+>>>>>>> 65b2300 (hotfix: Duplicate import)
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<Login />} />
       </Routes>
