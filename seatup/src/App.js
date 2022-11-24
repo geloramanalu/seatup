@@ -25,10 +25,12 @@ function App() {
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/profil' element={<Profil />} />
         <Route path='/seat' element={<Seat />} />
-        <Route psath='/cart' element={<Cart />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/loading-payment' element={<LoadingPayment />} />
+        <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
         <Route path='/loading-payment' element={<LoadingPayment />}/>
         <Route path='/register' element={<Register />} />
-        <Route path='/login' element={<Login />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
