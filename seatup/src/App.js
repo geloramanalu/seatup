@@ -14,6 +14,7 @@ import LoadingPayment from './component/LoadingPayment';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
 import Login from './component/Login';
 =======
@@ -22,6 +23,9 @@ import Login from './component/Login';
 >>>>>>> 33223b1 ([edit]: App)
 =======
 >>>>>>> 65b2300 (hotfix: Duplicate import)
+=======
+import Login from './component/Login';
+>>>>>>> 520af09 ([edit]: login)
 import { useState } from 'react';
 >>>>>>> 3109a91 ([edit]: login)
 

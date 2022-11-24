@@ -22,7 +22,7 @@ export default function Navbar({login}) {
       } else {
         return (
           <>
-            <i className=" opacity-75"></i><span className="text-xl ">Masuk</span>
+            <i className=" opacity-75"></i><span className="text-xl ">Masuk/Daftar</span>
           </>
         );
       }
@@ -58,7 +58,7 @@ export default function Navbar({login}) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <NavLink 
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
                   to={"/"}
                 >
                   <i className="opacity-75 "></i><span className="text-xl ">Beranda</span>
@@ -66,7 +66,7 @@ export default function Navbar({login}) {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "menu" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "menu" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
                   to={"/menu"}
                 >
                   <i className=" opacity-75"></i><span className="text-xl ">Menu</span>
@@ -74,7 +74,7 @@ export default function Navbar({login}) {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "cart" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "cart" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
                   to={"/cart"}
                 >
                   <i className=" opacity-75"></i><span className="text-xl ">Keranjang</span>
@@ -82,7 +82,7 @@ export default function Navbar({login}) {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "login" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "login" ? "rounded-full py-3 px-6 text-black bg-kuning" : " text-white"}`}
                   to={"/login"}
                 >
                   {e => handleProfil(e)}
