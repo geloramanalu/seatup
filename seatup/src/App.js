@@ -5,9 +5,11 @@ import { Route, Routes } from 'react-router';
 import Profil from './component/Profil';
 import Seat from './component/Seat';
 import Homepage from './component/Homepage';
+import Login from './component/Login';
 import Cart from './component/Cart';
 import Checkout from './component/Checkout';
 import Error from './component/Error';
+import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
 <<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
@@ -30,12 +32,18 @@ function App() {
         <Route path='/profil' element={<Profil />} />
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
+<<<<<<< HEAD
         <Route path='/loading-payment' element={<LoadingPayment />} />
 <<<<<<< HEAD
         <Route path='/notification' element={<NotificationPage/>} />
 =======
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
 >>>>>>> 3109a91 ([edit]: login)
+=======
+        <Route path='/loading-payment' element={<LoadingPayment />}/>
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+>>>>>>> 036fc17 (added register page and paths)
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<Login />} />
       </Routes>
