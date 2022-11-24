@@ -3,8 +3,8 @@ import homepageBtnBackground2 from "../img/homepage_btn2.png"
 
 const HomepageButton = ({ image, label }) => {
   return (
-    <button className="mt-10 rounded-3xl border-4 border-[#A7332F] w-full">
-      <img src={image} className="w-full"></img>
+    <button className="mt-5 rounded-3xl border-4 border-[#A7332F] w-full">
+      <img alt="" src={image} className="w-full"></img>
       <div className="py-2 m-3 rounded-3xl bg-merah text-white text-2xl">
         {label}
       </div>
