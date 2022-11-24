@@ -5,9 +5,11 @@ import { Route, Routes } from 'react-router';
 import Profil from './component/Profil';
 import Seat from './component/Seat';
 import Homepage from './component/Homepage';
+import Login from './component/Login';
 import Cart from './component/Cart';
 import Checkout from './component/Checkout';
 import Error from './component/Error';
+import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
 import Login from './component/Login';
 import { useState } from 'react';
@@ -25,9 +27,15 @@ function App() {
         <Route path='/profil' element={<Profil />} />
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
+<<<<<<< HEAD
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/loading-payment' element={<LoadingPayment />} />
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
+=======
+        <Route path='/loading-payment' element={<LoadingPayment />}/>
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+>>>>>>> main
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
