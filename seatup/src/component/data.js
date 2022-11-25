@@ -3,6 +3,10 @@ export const seatupData = [{
         user1: {
           username1: 'ronggo1811@gmail.com',
           password1: 'ronggo',
+        },
+        user2: {
+          username1: 'irfannm02@gmail.com',
+          password1: 'irfan',
         }
       },
     menu: {
