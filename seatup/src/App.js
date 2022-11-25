@@ -9,6 +9,8 @@ import Cart from './component/Cart';
 import Checkout from './component/Checkout';
 import Error from './component/Error';
 import LoadingPayment from './component/LoadingPayment';
+import NotificationPage from './component/NotificationPage';
+import Login from './component/Login';
 
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/loading-payment' element={<LoadingPayment />} />
+        <Route path='/notification' element={<NotificationPage/>} />
         <Route path="*" element={<Error />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );
