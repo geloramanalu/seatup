@@ -15,6 +15,7 @@ import LoadingPayment from './component/LoadingPayment';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
 import Login from './component/Login';
 =======
@@ -26,6 +27,8 @@ import Login from './component/Login';
 =======
 import Login from './component/Login';
 >>>>>>> 520af09 ([edit]: login)
+=======
+>>>>>>> bca67e3 ([edit]: App)
 import { useState } from 'react';
 >>>>>>> 3109a91 ([edit]: login)
 
@@ -46,6 +49,7 @@ function App() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 65b2300 (hotfix: Duplicate import)
@@ -55,6 +59,8 @@ function App() {
 <<<<<<< HEAD
         <Route path='/notification' element={<NotificationPage/>} />
 =======
+=======
+>>>>>>> bca67e3 ([edit]: App)
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
 <<<<<<< HEAD
 <<<<<<< HEAD
