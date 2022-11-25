@@ -27,8 +27,9 @@ function App() {
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/checkout' element={<Checkout />} />
-        <Route path='/loading-payment' element={<LoadingPayment />} />
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
+        <Route path='/loading-payment' element={<LoadingPayment />}/>
+        <Route path='/register' element={<Register />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
