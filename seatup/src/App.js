@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Navbar from './component/Navbar';
 import { Route, Routes } from 'react-router';
 import Profil from './component/Profil';
@@ -11,7 +9,6 @@ import Checkout from './component/Checkout';
 import Error from './component/Error';
 import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
-import Notification from './component/NotificationPage'
 import { useState } from 'react';
 import NotificationPage from './component/NotificationPage';
 
