@@ -11,7 +11,6 @@ import Checkout from './component/Checkout';
 import Error from './component/Error';
 import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
-import Login from './component/Login';
 import { useState } from 'react';
 
 
@@ -26,7 +25,7 @@ function App() {
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/profil' element={<Profil />} />
         <Route path='/seat' element={<Seat />} />
-        <Route path='/cart' element={<Cart />} />
+        <Route psath='/cart' element={<Cart />} />
         <Route path='/loading-payment' element={<LoadingPayment />}/>
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
