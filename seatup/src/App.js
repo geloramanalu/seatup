@@ -17,6 +17,7 @@ import LoadingPayment from './component/LoadingPayment';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
 import Login from './component/Login';
 =======
@@ -34,6 +35,8 @@ import { useState } from 'react';
 >>>>>>> 3109a91 ([edit]: login)
 =======
 import Login from './component/Login';
+=======
+>>>>>>> bd27cc8 ([edit]: App)
 import { useState } from 'react';
 >>>>>>> 3eaa541 ([edit]: login)
 
@@ -49,6 +52,7 @@ function App() {
         <Route path='/checkout' element={<Checkout />} />
         <Route path='/profil' element={<Profil />} />
         <Route path='/seat' element={<Seat />} />
+<<<<<<< HEAD
         <Route path='/cart' element={<Cart />} />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -76,6 +80,9 @@ function App() {
 <<<<<<< HEAD
 >>>>>>> 3109a91 ([edit]: login)
 =======
+=======
+        <Route psath='/cart' element={<Cart />} />
+>>>>>>> bd27cc8 ([edit]: App)
         <Route path='/loading-payment' element={<LoadingPayment />}/>
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
