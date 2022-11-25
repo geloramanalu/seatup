@@ -12,10 +12,13 @@ import Error from './component/Error';
 import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import NotificationPage from './component/NotificationPage';
 import Login from './component/Login';
 =======
 import Login from './component/Login';
+=======
+>>>>>>> 33223b1 ([edit]: App)
 import { useState } from 'react';
 >>>>>>> 3109a91 ([edit]: login)
 
@@ -34,11 +37,16 @@ function App() {
         <Route path='/cart' element={<Cart />} />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <Route path='/checkout' element={<Checkout />} />
+>>>>>>> 33223b1 ([edit]: App)
         <Route path='/loading-payment' element={<LoadingPayment />} />
 <<<<<<< HEAD
         <Route path='/notification' element={<NotificationPage/>} />
 =======
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
+<<<<<<< HEAD
 >>>>>>> 3109a91 ([edit]: login)
 =======
         <Route path='/loading-payment' element={<LoadingPayment />}/>
@@ -50,6 +58,8 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
 >>>>>>> 231c302 (added register page and paths)
+=======
+>>>>>>> 33223b1 ([edit]: App)
         <Route path="*" element={<Error />} />
         <Route path="/login" element={<Login />} />
       </Routes>
