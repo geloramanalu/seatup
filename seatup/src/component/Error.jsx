@@ -1,13 +1,6 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import error_404 from "../img/error_404.png"
 
-function Navigate() {
-  const navigate = useNavigate();
-}
-
-const navigateHome = () => {
-  Navigate('/');
-};
 
 const Error = () => {
   return (
