@@ -67,7 +67,7 @@ const Login = () => {
 
           <div className="flex justify-center items-center w-full gap-2">
             Sudah memiliki akun?
-            <a className="font-bold text-merah" href="#"> Masuk</a>
+            <a className="font-bold text-merah" href="/login"> Masuk</a>
           </div>
           
           <div>

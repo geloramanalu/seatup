@@ -22,7 +22,7 @@ export default function Navbar({login}) {
       } else {
         return (
           <>
-            <i className=" opacity-75"></i><span className="text-xl ">Masuk</span>
+            <i className=" opacity-75"></i><span className="text-xl ">Daftar</span>
           </>
         );
       }
@@ -82,8 +82,8 @@ export default function Navbar({login}) {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "login" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
-                  to={"/login"}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "register" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
+                  to={"/register"}
                 >
                   {e => handleProfil(e)}
                 </NavLink>

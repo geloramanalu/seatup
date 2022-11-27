@@ -18,6 +18,44 @@ const Checkout = () => {
         }
     }
 
+    const RincianPembayaran = () => {
+        return (
+            <>
+                <div className="xl:mx-7">
+                    <div className="flex justify-between my-2">
+                        <h2 className="text-sm xl:text-lg">Nomor Order</h2>
+                        <h2 className="text-sm xl:text-lg">A109928817762S</h2>
+                    </div>
+                    <div className="flex justify-between my-2">
+                        <h2 className="text-sm xl:text-lg">Harga</h2>
+                        <h2 className="text-sm xl:text-lg">Rp23.0000,00</h2>
+                    </div>
+                    <div className="flex justify-between my-2">
+                        <h2 className="text-sm xl:text-lg">Biaya Layanan & Lainnya</h2>
+                        <h2 className="text-sm xl:text-lg">Rp1.000,00</h2>
+                    </div>
+                    <div className="flex justify-between my-2">
+                        <h2 className="text-sm xl:text-lg">Kursi Reguler</h2>
+                        <h2 className="text-sm xl:text-lg">A1</h2>
+                    </div>
+                    <div className="flex justify-between xl:mt-2 xl:pb-6 border-b-kuning border-b-2 border-opacity-60 pb-3">
+                        <h2 className="text-sm xl:text-lg">PPN 11%</h2>
+                    </div>
+                    <div className="flex justify-end xl:mt-2 xl:mb-6 pt-2">
+                        <h2 className="text-sm xl:text-lg">Rp26.640,00</h2>
+                    </div>
+                </div>
+            </>
+        )
+    }
+
+    const CircularButton = ({text, onClick}) => {
+        return (
+            <>
+                <button className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center p-5 shadow-xl bg-kuning hover:bg-opacity-75" onClick={onClick}>{text}</button>
+            </>
+        )
+    }
     
 
     return (
@@ -47,39 +85,17 @@ const Checkout = () => {
                     <div className="flex flex-col flex-1 items-center xl:my-3 justify-center">
                         <div className="shape box-content h-44 w-44 xl:h-64 xl:w-64 lg:px-8 lg:py-8 mb-8 bg-abu text-center"></div>
                         <div className=" flex flex-row text-black w-full lg:w-4/6 justify-evenly">
-                            <button className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center p-5 shadow-xl bg-kuning hover:bg-opacity-75" onClick={() => decrement()}>-</button>
+                            <CircularButton text={"-"} onClick={decrement}/>
                             <h1 className="text-xl xl:text-2xl self-center text-abu px-3">{counter}</h1>
-                            <button className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center p-5 shadow-xl bg-kuning hover:bg-opacity-75" onClick={() => increment()}>+</button>
+                            <CircularButton text={"+"} onClick={increment}/>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col lg:w-4/12 w-full mt-6 ">
                     <div className="pembayaran bg-merah xl:mx-7 rounded-2xl px-4 mx-3 h-max text-abu xl:mb-2 justify-center py-3">
                         <h1 className="text-xl xl:text-3xl font-extrabold xl:mx-7 xl:my-6 pb-3 border-b-kuning border-opacity-60 border-b-2 xl:pb-2">Total Pembayaran</h1>
-                        <div className="xl:mx-7">
-                            <div className="flex justify-between my-2">
-                                <h2 className="text-sm xl:text-lg">Nomor Order</h2>
-                                <h2 className="text-sm xl:text-lg">A109928817762S</h2>
-                            </div>
-                            <div className="flex justify-between my-2">
-                                <h2 className="text-sm xl:text-lg">Harga</h2>
-                                <h2 className="text-sm xl:text-lg">Rp23.0000,00</h2>
-                            </div>
-                            <div className="flex justify-between my-2">
-                                <h2 className="text-sm xl:text-lg">Biaya Layanan & Lainnya</h2>
-                                <h2 className="text-sm xl:text-lg">Rp1.000,00</h2>
-                            </div>
-                            <div className="flex justify-between my-2">
-                                <h2 className="text-sm xl:text-lg">Kursi Reguler</h2>
-                                <h2 className="text-sm xl:text-lg">A1</h2>
-                            </div>
-                            <div className="flex justify-between xl:mt-2 xl:pb-6 border-b-kuning border-b-2 border-opacity-60 pb-3">
-                                <h2 className="text-sm xl:text-lg">PPN 11%</h2>
-                            </div>
-                            <div className="flex justify-end xl:mt-2 xl:mb-6 pt-2">
-                                <h2 className="text-sm xl:text-lg">Rp26.640,00</h2>
-                            </div>
-                        </div>
+                        <RincianPembayaran />
+                        
                     </div>
                     <div className="bottom-0 sticky lg:relative bg-merah rounded-2xl xl:mx-7 px-4 mx-3 mt-4 flex-col flex text-abu font-bold divide-y divide-kuning">
                         <button className="text-md xl:text-xl text-start p-2 mx-1 xl:p-4 xl:mx-2 flex items-center justify-between  hover:text-gray-400">Tunai <FontAwesomeIcon icon={faGreaterThan} /></button>

@@ -1,5 +1,5 @@
-import email from "../img/login_em.png"
-import password from "../img/login_password.png"
+import loginEmail from "../img/login_em.png"
+import loginPassword from "../img/login_password.png"
 import passOn from "../img/login_pass.svg"
 import passOff from "../img/login_pass_no.svg"
 import googleIcon from "../img/login_google.png"
@@ -57,7 +57,7 @@ const Login = ({setLogin}) => {
             <form action="#" className="w-full" onSubmit={handleSubmit}>
               <label className="relative block mb-5">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <img src={email}></img>
+                  <img src={loginEmail}></img>
                 </span>
                 <input 
                   type="email" 
@@ -71,7 +71,7 @@ const Login = ({setLogin}) => {
               </label>
               <label className="relative block mb-5">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-4">
-                  <img src={password}></img>
+                  <img src={loginPassword}></img>
                 </span>
                 <input 
                   type={(open === false) ? 'password' : 'text'} 
