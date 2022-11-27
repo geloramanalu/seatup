@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import Navbar from './component/Navbar';
 import { Route, Routes } from 'react-router';
 import Profil from './component/Profil';
@@ -12,6 +10,7 @@ import Error from './component/Error';
 import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
 import { useState } from 'react';
+import NotificationPage from './component/NotificationPage';
 
 
 function App() {
@@ -27,9 +26,11 @@ function App() {
         <Route path='/seat' element={<Seat />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/checkout' element={<Checkout />} />
+        <Route path='/loading-payment' element={<LoadingPayment />} />
         <Route path='/login' element={login ? <Profil /> : <Login setLogin={setLogin}/>} />
         <Route path='/loading-payment' element={<LoadingPayment />}/>
         <Route path='/register' element={<Register />} />
+        <Route path='/notification' element={<NotificationPage />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

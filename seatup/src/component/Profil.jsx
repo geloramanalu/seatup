@@ -49,7 +49,7 @@ const Profil = ({text, backdrop}) => {
                     <div className="shape box-content h-52 w-52 xl:h-64 xl:w-64 lg:px-8 lg:py-8 mb-8 bg-abu text-center"></div>
                     <button type="submit" className="bg-kuning font-2xl font-extrabold px-20 py-4 text-black rounded-full hover:opacity-75">Unggah Foto</button>
                     <p className="text-abu opacity-75 font-bold my-8 text-sm w-72">
-                        Ukuran file: maksimum 10.000.000 bytes (10 Megabytes). 
+                        Ukuran file: maksimum 10.000.000 bytes (10 Megabytes).
                         Ekstensi file yang diperbolehkan: .JPG .JPEG .PNG</p>
                 </div>
                 <div className="flex flex-col mx-4 lg:mx-8 lg:w-7/12 mb-8 md:justify-center lg:flex-col sm:flex-row flex-wrap xl:flex-nowrap">

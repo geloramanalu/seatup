@@ -14,7 +14,9 @@ module.exports = {
         'darkerabu':'#AAAAAA',
         'kuningtua': '#D99B40',
         'biru': '#223954',
-        'darkbiru':'#111E2E'
+        'darkbiru':'#111E2E',
+        'kuning2': '#FFE9C7',
+        'abu2':'#9F9F9F'
       }
     },
   },
