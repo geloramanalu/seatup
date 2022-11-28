@@ -17,8 +17,13 @@ module.exports = {
         'darkbiru':'#111E2E',
         'kuning2': '#FFE9C7',
         'abu2':'#9F9F9F'
+      },
+      backgroundImage:{
+        'products-header' : "url('/src/img/products-header.png')",
       }
+
     },
   },
   plugins: [],
+
 }

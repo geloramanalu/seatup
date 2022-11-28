@@ -5,12 +5,13 @@ import Seat from './component/Seat';
 import Homepage from './component/Homepage';
 import Login from './component/Login';
 import Cart from './component/Cart';
-import Checkout from './component/Checkout/Checkout';
+import Checkout from './component/Checkout';
 import Error from './component/Error';
 import Register from './component/Register';
 import LoadingPayment from './component/LoadingPayment';
 import { useState } from 'react';
 import NotificationPage from './component/NotificationPage';
+import Products from './component/Products';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/loading-payment' element={<LoadingPayment />}/>
         <Route path='/register' element={<Register />} />
         <Route path='/notification' element={<NotificationPage />} />
+        <Route path='/products' element={<Products />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
