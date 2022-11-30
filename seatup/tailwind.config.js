@@ -8,7 +8,7 @@ module.exports = {
         'merah': '#A7332F',
         'abu': '#DADADA',
         'white': '#FFFFFF',
-        'black': '#000000',
+        'black': '#1E1E1E',
         'brokenwhite': '#F6F6F6',
         'broken2white': '#DADADA',
         'darkerabu':'#AAAAAA',
@@ -20,6 +20,7 @@ module.exports = {
       },
       backgroundImage:{
         'products-header' : "url('/src/img/products-header.png')",
+        'menu-1' : "url('/src/img/products/menu-pic-1.png')",
       }
 
     },
