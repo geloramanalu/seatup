@@ -1,9 +1,38 @@
 import React from 'react'
 import SearchImg from "../img/search-icon.png"
+import "react-lazy-load-image-component/src/effects/blur.css";
+import { Dialog } from "@headlessui/react";
+import { useState } from "react";
+import { dataMenu } from '../data/dataMenu';
+
+// const MenuCard = ({image, label, desc}) =>{
+//     return(
+//         <button className="rounded-xl">
+//             <img src={}/>
+
+//         </button>
+//     )
+
+// }
 
 export default function Products() {
-  return (
+    const [isTampil, setIsTampil] = useState(false);
+    const [fotoTampil, setFotoTampil] = useState();
+
+    function closeFoto() {
+        setIsTampil(false);
+        setFotoTampil();
+    }
+
+    function openFoto(foto) {
+        setFotoTampil(foto);
+        setIsTampil(true);
+        console.log(isTampil, fotoTampil);
+    }
+  
+    return (
     <div>
+        {/* header */}
         <div className="flex flex-col overflow-hidden h-screen w-full">
             <div className="bg-products-header bg-cover h-1/4 w-screen sm:h-3/5 lg:h-5/6">
                 
@@ -13,7 +42,7 @@ export default function Products() {
                         
                         <label className="block text-gray-400">
                         
-                            <span className="absolute pt-1 px-3 w-5/6 md:pt-3 lg:pt-4 lg:px-6">
+                            <span className="absolute pt-1 px-2 w-5/6 md:pt-3 lg:pt-4 lg:px-6">
                                 <img src={SearchImg} className="scale-50 lg:scale-100" alt="search-icon"/>
                             </span>
                         
@@ -21,7 +50,7 @@ export default function Products() {
                                 type="text"
                                 name="search"
                                 id="search"
-                                className="bg-transparent absolute text-gray-400 justify-center h-10 ml-12 focus:outline-none text-xs font-semibold sm:text-sm md:h-14 lg:h-16 lg:text-lg lg:ml-20"
+                                className="bg-transparent absolute text-gray-400 justify-center h-10 ml-10 focus:outline-none text-xs font-regular sm:text-sm md:h-14 md:text-semibold lg:h-16 lg:text-lg lg:ml-20"
                                 placeholder="Lagi mau makan apa?">
                             </input>
 
@@ -34,8 +63,11 @@ export default function Products() {
 
             </div>
             
-            <div className="bg-slate-300 h-full">
-                test 2
+            <div className="flex flex-row h-full w-full overflow-hidden">
+                <div>
+
+                </div>
+                
             </div>
         </div>
     </div>
