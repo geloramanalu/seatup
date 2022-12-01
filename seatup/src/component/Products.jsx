@@ -52,10 +52,10 @@ const MenuList = ({ name, quantity }) => {
                     <div className='bg-gray-500 px-3 rounded-full text-slate-200 lg:text-xs xl:text-lg'>x{quantity}</div>
                     {/* <div className="">3</div> */}
                 </div>
-                    <img src={IconDelete} className='object-contain absolute right-32 lg:right-16 xl:right-20'/>
-                    <div className='border-b-2 border-opacity-20 border-black'></div>
+                <img src={IconDelete} className='object-contain absolute right-32 lg:right-16 xl:right-20' />
+                <div className='border-b-2 border-opacity-20 border-black'></div>
             </div>
-            
+
 
 
         </>
@@ -149,14 +149,13 @@ export default function Products() {
 
                     </div>
                     {/*recap pesanan*/}
-                    <div className="bg-transparent w-full h-100 lg:mt-52 px-20 pb-10 lg:pr-10 lg:pl-3 lg:w-1/4 lg:sticky lg:top-10 lg:justify-center">
-                        {/* <div className='font-bold text-slate-400 text-xl mb-4'>
-                            Daftar Pesanan
-                        </div> */}
+                    {/* <div className="lg:sticky lg:top-32 bg-red-100 h-10 w-20"></div> */}
+                    <div className="bg-transparent w-full h-100 lg:mt-52 px-20 pb-10 lg:pr-10 lg:pl-3 lg:w-1/4 lg:justify-center">
+
                         <h1 className="text-3xl md:text-4xl xl:text-5xl font-black border-b-4 mb-5 xl:pl-5 px-2 pb-2 border-opacity-20 border-black text-gray-500">Daftar Pesanan</h1>
 
                         <div className='flex flex-col gap-5 font-semibold text-gray-500 bg-slate-200 rounded-3xl h-auto w-100 shadow-md lg:px-7 px-10 py-5'>
-                            
+
                             <MenuList name="Nasi Kuning" quantity="1" />
                             <MenuList name="Nasi Kuning" quantity="1" />
                             <MenuList name="Nasi Kuning" quantity="1" />
@@ -165,14 +164,16 @@ export default function Products() {
                                     <h1 className='font-extrabold text-2xl lg:text-lg xl:text-2xl text-semibold'>Subtotal</h1>
                                     <div className='align-center lg:text-sm xl:text-xl'>Rp30.000,00</div>
                                 </div>
-                                
+
                             </div>
 
                         </div>
+
+                        <button className=' hover:brightness-110 mt-5 bg-kuning rounded-full w-full h-14 shadow-xl flex justify-center items-center text-center font-extrabold text-2xl lg:text-sm xl:text-lg 2xl:text-2xl p-2'>
                         
-                        <button className='mt-5 bg-kuning rounded-full w-full h-14 shadow-xl flex justify-center items-center text-center font-extrabold text-2xl lg:text-sm xl:text-lg 2xl:text-2xl p-2 hover:brightness-110'>
-                            <img src={Arrow} className="absolute right-28 lg:right-14 lg:scale-75 xl:scale-100 xl:right-16"/>
-                            Pesan Sekarang!</button>
+                            Pesan Sekarang!
+                            <img src={Arrow} className="absolute right-28 lg:right-14 lg:scale-75 xl:scale-100 xl:right-16" />
+                        </button>
 
                     </div>
 
