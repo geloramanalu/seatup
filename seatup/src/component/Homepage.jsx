@@ -1,3 +1,4 @@
+import {Link } from "react-router-dom";
 import homepageBtnBackground1 from "../img/homepage_btn1.png"
 import homepageBtnBackground2 from "../img/homepage_btn2.png"
 
@@ -13,14 +14,17 @@ const HomepageButton = ({ image, label }) => {
 }
 
 const Homepage = () => {
+
   return (
     <div className="bg-[url(./img/homepage_background.png)] bg-cover h-full -mt-3">
       <div className="mt-3 p-5 w-full lg:w-1/2">
         <div className="text-center text-2xl font-bold">
           Halo, mari kita lihat menu kita hari ini!
-          <button className="py-7 mt-5 rounded-2xl bg-merah text-white text-5xl w-full">
-            Menu Hari Ini
-          </button>
+          <Link to="/products">
+            <button className="py-7 mt-5 rounded-2xl bg-merah text-white text-5xl w-full">
+              Menu Hari Ini
+            </button>
+          </Link>
           <HomepageButton label="Promo dan Penjualan Terlaris" image={homepageBtnBackground1}></HomepageButton>
           <HomepageButton label="Cek Ketersediaan Kursi" image={homepageBtnBackground2}></HomepageButton>
         </div>
