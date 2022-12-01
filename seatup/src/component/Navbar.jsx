@@ -66,8 +66,8 @@ export default function Navbar({login}) {
               </li>
               <li className="nav-item">
                 <NavLink
-                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "menu" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
-                  to={"/menu"}
+                  className={`flex items-center text-xs py-3 px-3 font-extrabold hover:opacity-75 ${splitLocation[1] === "products" ? "rounded-full py-3 px-7 text-black bg-kuning" : " text-white"}`}
+                  to={"/products"}
                 >
                   <i className=" opacity-75"></i><span className="text-xl ">Menu</span>
                 </NavLink>
