@@ -1,23 +1,37 @@
 import React from 'react'
 import SearchImg from "../img/search-icon.png"
-import Makanan from "../img/products/menu-pic-1.png"
+import Makanan1 from "../img/products/menu-pic-1.png"
+import Makanan2 from "../img/products/menu-pic-2.png"
+import Makanan3 from "../img/products/menu-pic-3.png"
+import Makanan4 from "../img/products/menu-pic-4.png"
+import Makanan5 from "../img/products/menu-pic-5.png"
+import Makanan6 from "../img/products/menu-pic-6.png"
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Dialog, Menu } from "@headlessui/react";
 import { useState } from "react";
 import { dataMenu } from '../data/dataMenu';
 
+// function that constructs menu card
 const MenuCard = ({image, name, price, desc}) =>{
     return(
-        <button className="rounded-3xl">
-            <div className="relative h-40 w-auto bg-slate-400 rounded-lg">
-                <div className="inset-y-0">
-                    <div className="relative w-12 h-12 xl:w-16 xl:h-16 mx-3 mr-3 rounded-full flex justify-center items-center text-center font-bold text-2xl p-2 shadow-xl bg-kuning hover:bg-opacity-75 z-10">+</div>
+        <button className="rounded-3xl transition ease-in-out duration-500 filter transform hover:scale-110 z-60">
+            <div className="relative h-96 w-auto">
+                <div className="flex justify-end">
+                    <div className="absolute w-9 h-9 md:w-12 md:h-12 -mt-5 -mx-5 md:-mt-6 md:-mx-6 xl:w-16 xl:h-16 rounded-full flex justify-center items-center text-center font-bold text-2xl p-2 shadow-xl bg-kuning hover:brightness-110 z-10">+</div>
                 </div>
                 
-                <img src={image} className="z-0 w-100 h-100 w-auto"/>
-                <h1 className="absolute z-30">{name}</h1>
-                <h2 className="absolute z-30">{price}</h2>
-                <p className="absolute">{desc}</p>
+                <img src={image} className="absolute z-0 w-auto h-full object-cover rounded-lg"/>
+
+                <div className="relative h-full w-full flex flex-col justify-end p-5 sm:pl-8 md:p-8 text-white bg-gradient-to-t from-black rounded-lg">
+                    <div className='flex flex-col justify-end h-full w-full text-left'>
+                        <div className="relative font-montserrat font-bold text-md leading-5 md:text-2xl flex justify-start tracking-wide">{name}</div>
+                        <div className="relative font-semibold text-sm md:text-md flex justify-start brightness-90">{price}</div>
+                        <div className="relative font-light text-xs md:text-sm flex justify-start brightness-75">{desc}</div>
+                        
+                        
+                    </div>
+                </div>
+
             </div>
 
         </button>
@@ -43,7 +57,7 @@ export default function Products() {
     return (
     <div>
         {/* header */}
-        <div className="flex flex-col overflow-hidden h-screen w-full">
+        <div className="flex flex-col overflow-hidden h-100 w-full">
             <div className="bg-products-header bg-cover h-1/4 w-screen sm:h-3/5 lg:h-5/6">
                 
                 <div className="flex relative justify-center h-10 rounded-full bg-white drop-shadow-xl w-3/5 mt-28 mx-auto mb-5 py-auto sm:mt-64 sm:h-14 lg:h-16 lg:mt-72 lg:w-3/4">
@@ -74,37 +88,45 @@ export default function Products() {
             </div>
 
             {/* contents */}
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row mb-16">
 
-                <div className='relative flex-col px-10 sm:px-20 lg:pl-32 pt-16 lg:w-3/4 h-screen'> 
+                <div className='relative flex-col px-10 sm:px-20 lg:pl-32 pt-16 lg:w-3/4 h-100'> 
                     <div className='font-bold text-2xl pb-5'>Kategori</div>
 
-                    <div className='font-semibold flex flex-col flex-1 lg:flex-row gap-2 justify-between pb-5'>
+                    <div className='font-semibold flex flex-col flex-1 lg:flex-row gap-2 justify-between pb-12'>
                     
                         <select className='bg-merah text-white rounded-xl pl-6 py-3 pr-56'>
                             <option>Makanan</option>
                             <option>Minuman</option>
                             <option>Cemilan</option>    
+                            <option>Semua</option>    
                         </select>
 
                         <select className='bg-kuning2 text-slate-400 rounded-xl pl-6 py-3 pr-20'>
-                            <option>Sortir Berdasarkan: Harga</option>
                             <option>Sortir Berdasarkan: Paling Laris</option>
+                            <option>Sortir Berdasarkan: Harga</option>
                         </select>
                         
 
                     </div>
 
-                    <div className='justify-center align-center text-center grid grid-cols-3 md:gap-10 gap-2'>
-                        <div className='bg-slate-200 rounded'>x</div>
-                        <div className='bg-slate-200 rounded'>x</div>
-                        <div className='bg-slate-200 rounded'>x</div>
-                        <div className='bg-slate-200 rounded'>x</div>
-                        {/* <MenuCard image={Makanan} name="Judul" price="Rp20.000,00" desc="ifdawfu;asdfhsaifulasfndioslukfjnaislfukj" /> */}
-                        
+                    <div className='grid grid-cols-3 md:gap-10 gap-7'>
+
+                        <MenuCard image={Makanan1} name="Nasi Kuning" price="Rp10.000,00" desc="Nasi kuning ini enak sekali dilengkapi dengan lauk yang lezat." />
+                        <MenuCard image={Makanan2} name="Olive Fried Chicken" price="Rp12.000,00" desc="Siapa sih yang tidak tahu dengan makanan ini?" />
+                        <MenuCard image={Makanan3} name="Ayam Goreng" price="Rp15.000,00" desc="Menu yang satu ini disajikan dengan tekstur yang lembut dan bumbu gurih." />
+                        <MenuCard image={Makanan4} name="Bakso" price="Rp10.000,00" desc="Bakso dengan kuah yang gurih dan daging yang berserat." />
+                        <MenuCard image={Makanan5} name="Mie Goreng" price="Rp11.000,00" desc="Mie goreng yang lembut ini siap disantap untuk menghilangkan rasa laparmu." />
+                        <MenuCard image={Makanan6} name="Nasi Goreng" price="Rp14.000,00" desc="Makanan yang satu ini disajikan hangat dengan banyak santapan." />
+                            
                     </div>
-                    
-                </div>            
+                    {/*recap pesanan*/}
+                    <div className="bg-slate-400 m-10">
+
+                    </div>
+
+                </div>
+                
             </div>
             
         </div>

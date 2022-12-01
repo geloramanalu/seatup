@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,html}"],
   theme: {
+    fontFamily:{
+      'montserrat': ['Montserrat'],
+    },
+
     extend: {
       colors: {
         'kuning': '#FFAC30',
@@ -20,8 +24,10 @@ module.exports = {
       },
       backgroundImage:{
         'products-header' : "url('/src/img/products-header.png')",
-        'menu-1' : "url('/src/img/products/menu-pic-1.png')",
-      }
+      },
+      // fontFamily:{
+      //   'Mons'
+      // }
 
     },
   },
