@@ -7,6 +7,7 @@ import Makanan4 from "../img/products/menu-pic-4.png"
 import Makanan5 from "../img/products/menu-pic-5.png"
 import Makanan6 from "../img/products/menu-pic-6.png"
 import IconDelete from "../img/products/delete-icon.png"
+import Arrow from "../img/products/arrow.png"
 // import "react-lazy-load-image-component/src/effects/blur.css";
 // import { Dialog, Menu } from "@headlessui/react";
 // import { useState } from "react";
@@ -47,11 +48,11 @@ const MenuList = ({ name, quantity }) => {
             <div className="flex flex-col gap-3 w-full h-auto ">
                 <div className='flex flex-row gap-5 w-full h-full'>
 
-                    <div>{name}</div>
-                    <div className='bg-gray-500 px-3 rounded-full text-slate-200'>x{quantity}</div>
+                    <div className='lg:text-xs font-semibold xl:text-lg'>{name}</div>
+                    <div className='bg-gray-500 px-3 rounded-full text-slate-200 lg:text-xs xl:text-lg'>x{quantity}</div>
                     {/* <div className="">3</div> */}
                 </div>
-                    <img src={IconDelete} className='object-contain absolute right-32 lg:right-20'/>
+                    <img src={IconDelete} className='object-contain absolute right-32 lg:right-16 xl:right-20'/>
                     <div className='border-b-2 border-opacity-20 border-black'></div>
             </div>
             
@@ -133,7 +134,7 @@ export default function Products() {
 
                         </div>
 
-                        <div className='grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-7'>
+                        <div className='grid md:grid-cols-2 xl:grid-cols-3 md:gap-10 gap-7'>
 
                             <MenuCard image={Makanan1} name="Nasi Kuning" price="Rp10.000,00" desc="Nasi kuning ini enak sekali dilengkapi dengan lauk yang lezat." />
                             <MenuCard image={Makanan2} name="Olive Fried Chicken" price="Rp12.000,00" desc="Siapa sih yang tidak tahu dengan makanan ini?" />
@@ -152,23 +153,26 @@ export default function Products() {
                         {/* <div className='font-bold text-slate-400 text-xl mb-4'>
                             Daftar Pesanan
                         </div> */}
-                        <h1 className="text-3xl md:text-5xl font-black border-b-4 mb-5 xl:pl-5 px-2 pb-2 border-opacity-20 border-black text-gray-500">Daftar Pesanan</h1>
+                        <h1 className="text-3xl md:text-4xl xl:text-5xl font-black border-b-4 mb-5 xl:pl-5 px-2 pb-2 border-opacity-20 border-black text-gray-500">Daftar Pesanan</h1>
 
-                        <div className='flex flex-col gap-5 font-semibold text-gray-500 bg-slate-200 rounded-3xl h-auto w-100 shadow-md lg:pb-10 px-10 py-5'>
+                        <div className='flex flex-col gap-5 font-semibold text-gray-500 bg-slate-200 rounded-3xl h-auto w-100 shadow-md lg:px-7 px-10 py-5'>
                             
                             <MenuList name="Nasi Kuning" quantity="1" />
                             <MenuList name="Nasi Kuning" quantity="1" />
                             <MenuList name="Nasi Kuning" quantity="1" />
                             <div className='-mx-4'>
-                                <div className='flex justify-between bg-gray-300 w-full h-auto rounded-xl py-2 px-4 align-text-bottom'>
-                                    <h1 className='font-extrabold text-2xl text-semibold'>Subtotal</h1>
-                                    <div className='align-center'>Rp30.000,00</div>
-
+                                <div className='flex justify-between bg-gray-300 w-full h-auto rounded-xl py-2  px-4 align-text-bottom'>
+                                    <h1 className='font-extrabold text-2xl lg:text-lg xl:text-2xl text-semibold'>Subtotal</h1>
+                                    <div className='align-center lg:text-sm xl:text-xl'>Rp30.000,00</div>
                                 </div>
                                 
                             </div>
 
                         </div>
+                        
+                        <button className='mt-5 bg-kuning rounded-full w-full h-14 shadow-xl flex justify-center items-center text-center font-extrabold text-2xl lg:text-sm xl:text-lg 2xl:text-2xl p-2 hover:brightness-110'>
+                            <img src={Arrow} className="absolute right-28 lg:right-14 lg:scale-75 xl:scale-100 xl:right-16"/>
+                            Pesan Sekarang!</button>
 
                     </div>
 
